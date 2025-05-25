@@ -1,0 +1,3 @@
+1. npx create-next-app@latest quick-ticket
+2. npm i prisma @prisma/client react-icons
+
