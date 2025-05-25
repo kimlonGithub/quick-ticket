@@ -1,4 +1,6 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## QuickTicket Support System
+
+A simple and fast support ticket system built with Next.js 14, TypeScript, Prisma ORM, Neon Postgres database, and Sentry for error tracking and performance monitoring.
 
 ## Getting Started
 
