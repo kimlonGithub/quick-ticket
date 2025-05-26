@@ -2,6 +2,10 @@
 
 A simple and fast support ticket system built with Next.js 15, TypeScript, Prisma ORM, Neon Postgres database, and Sentry for error tracking and performance monitoring.
 
+![image](https://github.com/user-attachments/assets/84295f73-6d15-4077-8d26-625dee3e1b86)
+![image](https://github.com/user-attachments/assets/156f43de-38cb-4f1c-8323-7929fb39fe2d)
+
+
 ## Getting Started
 
 First, run the development server:
