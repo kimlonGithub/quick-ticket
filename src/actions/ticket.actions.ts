@@ -2,6 +2,7 @@
 import * as Sentry from "@sentry/nextjs";
 import { prisma } from "@/db/prisma";
 import { revalidatePath } from "next/cache";
+import { LogEvent } from "@/utils/sentry";
 
 export async function createTicket(
   prevState: { success: boolean; message: string },
@@ -13,10 +14,7 @@ export async function createTicket(
     const priority = formData.get("priority")?.toString();
 
     if (!subject || !description || !priority) {
-      Sentry.captureMessage("Ticket creation failed: Missing required fields", {
-        level: "error",
-        extra: { subject, description, priority },
-      });
+      LogEvent("Ticket creation failed: Missing required fields", );
       return {
         success: false,
         message: "Subject and description are required",
